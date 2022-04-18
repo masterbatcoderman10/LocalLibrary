@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PinkChickenRegular';
+    src: url('fonts/PinkChickenRegular.eot');
+    src: url('fonts/PinkChickenRegular.eot') format('embedded-opentype'),
+         url('fonts/PinkChickenRegular.woff2') format('woff2'),
+         url('fonts/PinkChickenRegular.woff') format('woff'),
+         url('fonts/PinkChickenRegular.ttf') format('truetype'),
+         url('fonts/PinkChickenRegular.svg#PinkChickenRegular') format('svg');
+}

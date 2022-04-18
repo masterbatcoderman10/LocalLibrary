@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Creamy';
+    src: url('fonts/Creamy.eot');
+    src: url('fonts/Creamy.eot') format('embedded-opentype'),
+         url('fonts/Creamy.woff2') format('woff2'),
+         url('fonts/Creamy.woff') format('woff'),
+         url('fonts/Creamy.ttf') format('truetype'),
+         url('fonts/Creamy.svg#Creamy') format('svg');
+}

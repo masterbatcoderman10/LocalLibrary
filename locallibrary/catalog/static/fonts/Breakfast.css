@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Breakfast';
+    src: url('fonts/Breakfast.eot');
+    src: url('fonts/Breakfast.eot') format('embedded-opentype'),
+         url('fonts/Breakfast.woff2') format('woff2'),
+         url('fonts/Breakfast.woff') format('woff'),
+         url('fonts/Breakfast.ttf') format('truetype'),
+         url('fonts/Breakfast.svg#Breakfast') format('svg');
+}
