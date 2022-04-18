@@ -1,16 +1,184 @@
+@font-face {
+    font-family: 'Breakfast';
+    src: url('../fonts/fonts/Breakfast.eot');
+    src: url('../fonts/fonts/Breakfast.eot') format('embedded-opentype'),
+         url('../fonts/fonts/Breakfast.woff2') format('woff2'),
+         url('../fonts/fonts/Breakfast.woff') format('woff'),
+         url('../fonts/fonts/Breakfast.ttf') format('truetype'),
+         url('../fonts/fonts/Breakfast.svg#Breakfast') format('svg');
+}
+
+@font-face {
+    font-family: 'Creamy';
+    src: url('../creamy/fonts/Creamy.eot');
+    src: url('../creamy/fonts/Creamy.eot') format('embedded-opentype'),
+         url('../creamy/fonts/Creamy.woff2') format('woff2'),
+         url('../creamy/fonts/Creamy.woff') format('woff'),
+         url('../creamy/fonts/Creamy.ttf') format('truetype'),
+         url('../creamy/fonts/Creamy.svg#Creamy') format('svg');
+}
+
+@font-face {
+    font-family: 'PinkChickenRegular';
+    src: url('../pink-chicken/fonts/PinkChickenRegular.eot');
+    src: url('../pink-chicken/fonts/PinkChickenRegular.eot') format('embedded-opentype'),
+         url('../pink-chicken/fonts/PinkChickenRegular.woff2') format('woff2'),
+         url('../pink-chicken/fonts/PinkChickenRegular.woff') format('woff'),
+         url('../pink-chicken/fonts/PinkChickenRegular.ttf') format('truetype'),
+         url('../pink-chicken/fonts/PinkChickenRegular.svg#PinkChickenRegular') format('svg');
+}
+
+body {
+    /* background: url("../images/Local_library_Background_.jpg") repeat;
+    background-size: cover; */
+
+    background-color: rgba(155, 106, 0, 0.4);
+}
+
+.page-nav {
+    background-color: rgb(128, 81, 20);
+}
+
 .brand-header {
-    font-family: 'Caveat', cursive;
+    font-family: 'Breakfast', 'sans-serif';
+    line-height: 0.8em;
     font-size: 46px;
+    color: beige !important;
+
 }
 
 .heading {
     margin : 3% 0;
-    font-family: 'Oxygen' 'sans-serif';
+    font-family: 'Creamy', 'sans-serif';
+    font-size: 4em;
+    color: beige;
+
+}
+.page-heading {
+    margin : 3% 0;
+    font-family: 'Creamy', 'sans-serif';
+    font-size: 4em;
+    color: black;
+
 }
 
-.ni {
-    color: white;
-    font-family: 'Caveat', cursive;
+ul#navbar-items > li > a.ni{
+    color: beige;
+    font-family: 'Creamy', 'cursive';
     font-size: 24px;
 
+}
+
+ul#navbar-items {
+    margin-bottom: 1px;
+}
+
+ul#navbar-items > li:hover {
+
+    border-bottom: 1px solid white;
+    transition: all 0.4s  ease-in-out;
+}
+
+p.hero-p {
+    font-family: 'PinkChickenRegular', 'cursive';
+    color: beige;
+
+}
+
+.main-hero {
+    background: url('../images/Modded.png') center center no-repeat;
+
+}
+
+
+
+
+/* Index page css */
+
+.containment {
+    padding: 0 1%;
+    margin: 0 0 2% 0;
+}
+.service-card {
+    border: 1px solid rgb(77, 45, 0);
+    box-shadow: 1%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background : rgb(255, 236, 211);
+    
+}
+
+.some-num {
+    font-family: 'Creamy', 'cursive';
+    font-size: 5em;
+    color: rgb(201, 201, 201);
+
+}
+
+.service-name {
+
+    font-family: 'PinkChickenRegular', 'cursive'; 
+
+    color: rgb(201, 201, 201);
+    margin : 0;
+}
+
+/* Styles for the icons */
+.info-holder {
+    position: absolute;
+    width: 189px;
+}
+.iconic {
+    font-size: 6em;
+    color: white;
+    color: rgb(201, 201, 201);
+
+
+}
+
+.color-1 {
+    background: url("../images/Mod2.jpg") center center;
+    padding: 1% 0;
+}
+.color-2 {
+    background: url("../images/Mod3.jpg") center center;
+    padding: 1% 0;
+}
+.color-3 {
+    background: url("../images/Mod5.jpg") center center;    
+    padding: 1% 0;
+}
+.color-4 {
+    background: url("../images/Mod4.jpg") center center;
+    padding: 1% 0;
+}
+
+.color-1, .color-2, .color-3, .color-4 {
+    position: relative;
+    height: 360px;
+}
+
+.info-outwards {
+    right: 2%;
+}
+
+.info-inwards {
+    left: 2%;
+}
+
+.btn-holder {
+    width: 100px;
+    margin-bottom: 2%;
+}
+.view-btn {
+    border-radius: 10%;
+    width: 100%;
+    font-family: 'PinkChickenRegular', 'cursive';
+    background-color: rgb(128, 81, 20);
+    color: beige;
+    border: none
+}
+
+.view-btn:hover {
+    background-color: rgb(163, 122, 72);
+    transition: all 0.2s ease-in-out;
 }

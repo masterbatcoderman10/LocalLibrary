@@ -14,9 +14,11 @@ def index(request):
     # The 'all()' is implied by default.
     num_authors = Author.objects.count()
 
+    num_genres = Genre.objects.count()
+
     context = {
         'num_books': num_books,
-        'num_instances': num_instances,
+        'num_genres': num_genres,
         'num_instances_available': num_instances_available,
         'num_authors': num_authors,
     }

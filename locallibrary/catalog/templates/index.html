@@ -1,4 +1,92 @@
 {% extends "base.html"%}
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+{% block hero %}
+<div class="px-4 py-5 text-center main-hero">
+    <div class="hero-outer">
+        
+        {% comment %} {% load static%}
+        <img class="d-block mx-auto mb-4" src="{% static 'images/open_book.png'%}" alt="Open Book"> {% endcomment %}
+        <h1 class="heading text-center">The Local Library</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 hero-p">
+              Welcome to the local library, this is a test django application whose purpose is to demonstrate the vast features of django (and my web development skills). Feel free to browse the books as they are authentic, and the best part is if you do loan them, you get to keep them for free, since we won't be asking them back!
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        
+          </div>
+        </div>
+    </div>
+  </div>
+{% endblock%}
 {% block content%}
-    <h1 class="heading">The Local Library</h1>
+    <h2 class="page-heading text-center">Our Services</h2>
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="row">
+            
+            <!-- {% comment %} <div class="containment col-12 col-md-6">
+                <div class="service-card my-2">
+                    <p class="service-name text-center">Differnt types of books</p>
+                    <h3 class="card-title text-center some-num">{{num_books}}</h3>
+                    <div class="mx-auto btn-holder"><button class="mx-auto view-btn">View</button></div>
+                </div>
+            </div> {% endcomment %}
+            {% comment %} <div class="containment col-12 col-md-6">
+                <div class="service-card my-2">
+                    <p class="service-name text-center">Different authors</p>
+                    <h3 class="card-title text-center some-num">{{num_authors}}</h3>
+                    <div class="mx-auto btn-holder"><button class="mx-auto view-btn">View</button></div>
+                </div>
+            </div> {% endcomment %}
+            {% comment %} <div class="containment col-12 col-md-6">
+                <div class="service-card my-2">
+                    <p class="service-name text-center">Total books</p>
+                    <h3 class="card-title text-center some-num">{{num_instances}}</h3>
+                    <div class="mx-auto btn-holder"><button class="mx-auto view-btn">View</button></div>
+                </div>
+            </div> {% endcomment %}
+            {% comment %} <div class="containment col-12 col-md-6">
+                <div class="service-card my-2">
+                    <p class="service-name text-center">Total books available</p>
+                    <h3 class="card-title text-center some-num">{{num_instances_available}}</h3>
+                    <div class="mx-auto btn-holder"><button class="view-btn">View</button></div>
+                </div>
+            </div> {% endcomment %} -->
+            <div class="containment col-12 col-md-6">
+                <div class="color-1">
+                    <section class="info-holder info-outwards">
+                        <h3 class="text-center some-num">{{num_books}}</h3>
+                        <p class="service-name">Enjoy our vast collection of books, each book is sure to provide you with satisfaction and enjoyment.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="containment col-12 col-md-6">
+                <div class="color-2">
+                    <section class="info-holder info-inwards">
+                        <h3 class="text-center some-num">{{num_authors}}</h3>
+                        <p class="service-name ">Enjoy reading books from highly esteemed and well established authors.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="containment col-12 col-md-6">
+                <div class="color-3">
+                    <section class="info-holder info-outwards">
+                        <h3 class="text-center some-num">{{num_instances_available}}</h3>
+                        <p class="service-name ">A high availablilty for all our books means you don't have to worry about waiting for the book you want to read.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="containment col-12 col-md-6">
+                <div class="color-4">
+                    <section class="info-holder info-inwards">
+                        <h3 class="text-center some-num">{{num_genres}}</h3>
+                        <p class="service-name ">We present to you books from a wide array of genres to choose from.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-1"></div>
 {% endblock%}
