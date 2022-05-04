@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="heading">All Books</h1>
+<hr class="divider-1">
+{% if book_list %}
+    {% for book in book_list %}
+        <div class="outer">
+            <div class="col-12 book-card my-2 p-2">
+                <h4 class="service-name"><a href="" class="book-title">{{ book.title }}</a></h4>
+                <p class="text-muted">{{book.genre}}</p>
+                <p class="hero-p">By: {{book.author}}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+{% else %}
+
+{% endif %}
+{% endblock %}

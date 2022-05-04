@@ -28,6 +28,10 @@
          url('../pink-chicken/fonts/PinkChickenRegular.svg#PinkChickenRegular') format('svg');
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     /* background: url("../images/Local_library_Background_.jpg") repeat;
     background-size: cover; */
@@ -181,4 +185,31 @@ p.hero-p {
 .view-btn:hover {
     background-color: rgb(163, 122, 72);
     transition: all 0.2s ease-in-out;
+}
+
+
+/* book_list.html Styles */
+.divider-1 {
+    border: 3px solid beige;
+    border-radius: 50%;
+
+}
+
+.book-card {
+    background: rgb(128,81,20);
+    background: linear-gradient(315deg, rgba(128,81,20,1) 60%, rgba(62,41,1,1) 99%);
+    border: 2px solid rgb(128, 81, 20);
+    border-radius: 2%;
+}
+
+.book-title {
+    color: beige;
+}
+
+.book-title:hover {
+    color: bisque;
+}
+
+.outer {
+    padding: 0 20%;
 }
